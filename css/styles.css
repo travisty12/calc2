@@ -32,10 +32,14 @@ button[type="button"]:hover {
   width: 100%;
   margin-left: 4px;
 }
-/*
-input[name="one-btn"] {
 
-} */
+#display {
+  height: 150px;
+}
+
+#answer {
+  text-align: center;
+}
 
 .header {
   text-align: center;
