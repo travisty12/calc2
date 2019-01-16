@@ -9,67 +9,177 @@
   </head>
   <body>
     <div class ="container">
-      <h1>Calcultaro</h1>
-
-      <form id="form-one">
+      <div class ="header">
+          <h1>Calcultaro</h1>
+      </div>
+      <!-- <form id="form-one">
         <label for="input-one">Enter first number:</label>
-        <input id="input-one" type="text">
-        <button type="submit" class="btn">Calculta</button>
+        <input id="input-one" class="form-control" type="text">
       </form>
-      <form id="form-two">
-        <label for="input-two">Enter operation:</label>
-        <input id="input-two" type="text">
+      <form class="form-group" id="form-two">
+        <label for="input-two">Select operation:</label>
+        <select id="input-two" class="form-control">
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+          <option>^</option>
+          <option>log</option>
+        </select>
       </form>
       <form id="form-three">
         <label for="input-three">Enter second number:</label>
-        <input id="input-three" type="text">
-      </form>
-
-      <p id="answer">This is your answer.</p>
-
-
+        <input id="input-three" class="form-control" type="text">
+        <button id="submit" type="submit" class="btn">Calculta</button>
+        <button id="clear" type="submit" class="btn">Clear</button>
+      </form> -->
       <div class="row">
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">1</button>
-        </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">2</button>
-        </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">3</button>
+        <div id="display" class="well">
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
+          <div class="col-md-1">
+            <h1> </h1>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">4</button>
+        <div class="col-md-4">
+
         </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">5</button>
+        <div class="col-md-1">
+          <div id="left-pad" class="well">
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="add-btn">+</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="sub-btn">-</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="mult-btn">*</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="div-btn">/</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">6</button>
+        <div class="col-md-2">
+          <div id="num-pad" class="well">
+            <div class="row">
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="one-btn">1</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="two-btn">2</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="three-btn">3</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="four-btn">4</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="five-btn">5</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="six-btn">6</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="seven-btn">7</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="eight-btn">8</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="nine-btn">9</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="clear-btn">C</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="zero-btn">0</button>
+              </div>
+              <div class="col-md-4" style="background-color:#aaa;">
+                <button type="button" id="dot-btn">.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div id="right-pad" class="well">
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="pow-btn">^</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="log-btn">log</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="lp-btn">(</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="background-color:#aaa;">
+                <button type="button" id="rp-btn">)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">7</button>
-        </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">8</button>
-        </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">9</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">C</button>
-        </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">0</button>
-        </div>
-        <div class="col-md-4" style="background-color:#aaa;">
-          <button type="button">.</button>
+      <div id="equals" class="row">
+        <div class="calc-it">
+          <div class="well" id="submit-new">=</div>
         </div>
       </div>
     </div>

@@ -1,0 +1,42 @@
+button[type="button"] {
+  width: 40px;
+  height: 40px;
+  margin: 13px;
+  margin-left: -8px;
+}
+
+button[type="button"]:hover {
+  background-color: lightblue;
+  border: 2px blue solid;
+}
+
+#left-pad {
+  margin-left: 4px;
+}
+
+#right-pad {
+  margin-left: 4px;
+}
+
+#right-pad div div button {
+  text-align: center;
+}
+
+#equals {
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 10%;
+}
+
+#equals div button {
+  width: 100%;
+  margin-left: 4px;
+}
+/*
+input[name="one-btn"] {
+
+} */
+
+.header {
+  text-align: center;
+}
