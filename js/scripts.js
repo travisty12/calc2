@@ -36,27 +36,27 @@ $(document).ready(function() {
     }
 
     if ($(this).text() === "+") {
-      number1 = parseInt(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
+      number1 = parseFloat(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
       opClick = "+";
     }
     else if ($(this).text() === "-") {
-      number1 = parseInt(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
+      number1 = parseFloat(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
       opClick = "-";
     }
     else if ($(this).text() === "*") {
-      number1 = parseInt(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
+      number1 = parseFloat(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
       opClick = "*";
     }
     else if ($(this).text() === "/") {
-      number1 = parseInt(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
+      number1 = parseFloat(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
       opClick = "/";
     }
     else if ($(this).text() === "^") {
-      number1 = parseInt(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
+      number1 = parseFloat(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
       opClick = "^";
     }
     else if ($(this).text() === "log") {
-      number1 = parseInt(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
+      number1 = parseFloat(displayDig[0] + displayDig[1] + displayDig[2] + displayDig[3] + displayDig[4] + displayDig[5] + displayDig[6] + displayDig[7] + displayDig[8] + displayDig[9] + displayDig[10] + displayDig[11]);
       opClick = "log";
     }
     for (i = 0; i < 11; i++) {
@@ -85,42 +85,42 @@ $(document).ready(function() {
       for (i = 0; i < digSecond; i++) {
         strSecond += displayDig[12-(digSecond - i)];
       }
-      number2 = parseInt(strSecond);
+      number2 = parseFloat(strSecond);
       $("#answer").text(add(number1, number2));
     }
     else if (opClick === "-") {
       for (i = 0; i < digSecond; i++) {
         strSecond += displayDig[12-(digSecond - i)];
       }
-      number2 = parseInt(strSecond);
+      number2 = parseFloat(strSecond);
       $("#answer").text(subtract(number1, number2));
     }
     else if (opClick === "*") {
       for (i = 0; i < digSecond; i++) {
         strSecond += displayDig[12-(digSecond - i)];
       }
-      number2 = parseInt(strSecond);
+      number2 = parseFloat(strSecond);
       $("#answer").text(multiply(number1, number2));
     }
     else if (opClick === "/") {
       for (i = 0; i < digSecond; i++) {
         strSecond += displayDig[12-(digSecond - i)];
       }
-      number2 = parseInt(strSecond);
+      number2 = parseFloat(strSecond);
       $("#answer").text(divide(number1, number2));
     }
     else if (opClick === "^") {
       for (i = 0; i < digSecond; i++) {
         strSecond += displayDig[12-(digSecond - i)];
       }
-      number2 = parseInt(strSecond);
+      number2 = parseFloat(strSecond);
       $("#answer").text(power(number1, number2));
     }
     else if (opClick === "log") {
       for (i = 0; i < digSecond; i++) {
         strSecond += displayDig[12-(digSecond - i)];
       }
-      number2 = parseInt(strSecond);
+      number2 = parseFloat(strSecond);
       $("#answer").text(logCalc(number1, number2));
     }
     else {
